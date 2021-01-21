@@ -12,44 +12,12 @@
   width: 33%;
 }
 
-.column-two-third {
-  width: 33%;
-}
-
-.column-three-third {
-  width: 33%;
-}
-
 .column-one-fourth {
   width: 25%;
 }
 
-.column-two-fourth {
-  width: 25%;
-}
-
-.column-three-fourth {
-  width: 25%;
-}
-
-.column-four-fourth {
-  width: 25%;
-}
-
-.column-one-halfA {
-  width: 70%;
-}
-
-.column-two-halfA {
-  width: 30%;
-}
-
-.column-one-halfB {
-  width: 30%;
-}
-
-.column-two-halfB {
-  width: 70%;
+.column-one-half {
+  width: 50%;
 }
 
 img {
