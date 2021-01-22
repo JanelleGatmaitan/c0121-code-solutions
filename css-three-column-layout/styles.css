@@ -1,0 +1,51 @@
+body {
+  background-color: #3b96ff;
+}
+
+.container {
+  font-family: 'Lato';
+  max-width: 70%;
+  margin: auto;
+  margin-top: 5%;
+  color: white;
+}
+
+.row {
+  display: flex;
+}
+
+.col-full {
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+.col-thirds {
+  width: 33%;
+  margin: 0 auto;
+  max-width: 27%;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 80%;
+  height: 95px;
+  width: 95px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.infograph {
+  width: 50%;
+}
+
+.textContent {
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+}
