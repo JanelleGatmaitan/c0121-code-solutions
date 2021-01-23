@@ -31,13 +31,24 @@
 .img-and-text {
   display: flex;
   margin: auto;
-  max-width: 30%;
+  width: 50%;
 }
 
 .col-fourths {
   display: flex;
+  margin: 0 auto;
 }
 
 .text-content {
   margin-top: 40px;
+}
+
+.subTitle {
+  width: 30%;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.description {
+  width: 80%;
 }
