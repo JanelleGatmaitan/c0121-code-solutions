@@ -1,0 +1,43 @@
+.container {
+  font-family: Karla;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+}
+
+.col-full {
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+.missionStatement {
+  margin: 0 auto;
+  width: 70%;
+  line-height: 30px;
+}
+
+.img-and-text {
+  display: flex;
+  margin: auto;
+  max-width: 30%;
+}
+
+.col-fourths {
+  display: flex;
+}
+
+.text-content {
+  margin-top: 40px;
+}
