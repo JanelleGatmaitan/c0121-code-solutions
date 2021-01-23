@@ -13,7 +13,6 @@
 
 .header {
   text-align: center;
-  margin: 0 auto;
 }
 
 .title {
@@ -24,14 +23,12 @@
 
 .missionStatement {
   margin: 0 auto;
-  width: 70%;
+  width: 55%;
   line-height: 30px;
 }
 
 .img-and-text {
   display: flex;
-  margin: auto;
-  width: 50%;
 }
 
 .col-fourths {
@@ -39,16 +36,38 @@
   margin: 0 auto;
 }
 
+.col-fourths:first-child {
+  margin-bottom: 80px;
+}
+
 .text-content {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .subTitle {
-  width: 30%;
   text-transform: uppercase;
   font-size: 14px;
+  width: 200px;
 }
 
 .description {
+  width: 70%;
+  line-height: 27px;
+}
+
+.midContainer {
   width: 80%;
+  margin: 0 auto;
+}
+
+button {
+  text-transform: uppercase;
+  text-align: center;
+  color: #bf3b21;
+  font-weight: 780;
+  background-color: white;
+  padding: 10px 30px;
+  margin: 30px;
+  width: 200px;
+  border: solid 2px #bf3b21;
 }
