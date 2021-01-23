@@ -1,8 +1,5 @@
 #formHeading {
   font-family: 'Brandon Grotesque';
-  font-style: normal;
-  font-weight: 500;
-  src: url('BrandonGrotesque-Medium.woff2') format('woff2');
   text-transform: uppercase;
   font-size: 20px;
   color: #f64958;
@@ -13,9 +10,6 @@
 
 .formLabel {
   font-family: 'Brandon Grotesque';
-  font-style: normal;
-  font-weight: 500;
-  src: url('BrandonGrotesque-Medium.woff2') format('woff2');
   text-transform: uppercase;
   font-size: 12px;
   margin-left: 10px;
@@ -38,9 +32,6 @@
 
 select {
   font-family: 'Brandon Grotesque';
-  font-style: normal;
-  font-weight: 500;
-  src: url('BrandonGrotesque-Regular.woff2') format('woff2');
   padding: 2px;
   color: #2b2926;
   border-radius: 4px;
@@ -53,9 +44,6 @@ select {
 
 button {
   font-family: 'Brandon Grotesque';
-  font-style: normal;
-  font-weight: 450;
-  src: url('BrandonGrotesque-Regular.woff2') format('woff2');
   background-color: #f64958;
   color: white;
   border-radius: 15px;
@@ -65,6 +53,11 @@ button {
   padding: 5px 20px;
   margin-left: 360px;
   height: 33px;
+}
+
+.buttonContainer {
+  text-align: center;
+  margin-right: 40px;
 }
 
 .container {
