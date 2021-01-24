@@ -1,0 +1,42 @@
+.container {
+
+}
+
+.navBar {
+  display: flex;
+  border-bottom: 1px solid #c7c6c3;
+}
+
+.logo {
+  font-family: 'Tiempos Headline';
+  margin-left: 80px;
+  color: #036;
+}
+
+.navBarItems {
+  margin: auto;
+  display: flex;
+  margin-right: 80px;
+  font-family: 'Avenir';
+  font-size: 12px;
+}
+
+.navBarlink {
+  margin: auto 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: 'Avenir';
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+  background-color: #036;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  width: 90px;
+}
