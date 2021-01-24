@@ -5,12 +5,16 @@
 .navBar {
   display: flex;
   border-bottom: 1px solid #c7c6c3;
+  margin-top: 40px;
 }
 
-.logo {
-  font-family: 'Tiempos Headline';
+.logoContainer {
   margin-left: 80px;
-  color: #036;
+}
+
+#blueLogo {
+  width: 50%;
+  margin-bottom: 20px;
 }
 
 .navBarItems {
@@ -27,9 +31,10 @@
 
 a {
   text-decoration: none;
+  color: #999896;
 }
 
-button {
+#contactButton {
   font-family: 'Avenir';
   font-size: 12px;
   padding: 10px;
@@ -39,4 +44,46 @@ button {
   border: none;
   border-radius: 3px;
   width: 90px;
+}
+
+.mainPic {
+  margin: 40px;
+  position: relative;
+}
+
+.imgContainer {
+  text-align: center;
+}
+
+#EMR {
+  width: 83%;
+  position: relative;
+}
+
+.textContent {
+  position: absolute;
+  top: 30px;
+  margin-left: 150px;
+  line-height: 30px;
+  bottom: 100px;
+}
+
+#title {
+
+}
+
+#paragraph {
+
+}
+
+.startButton {
+  font-family: 'Avenir';
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+  background-color: #036;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  width: 130px;
 }
