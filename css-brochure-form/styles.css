@@ -17,9 +17,6 @@
 
 .inputBox {
   font-family: 'AtlasGrotesk';
-  font-style: normal;
-  font-weight: 300;
-  src: url('AtlasGrotesk-Light-Web.woff2') format('woff2');
   padding: 5px;
   color: #b8b9ba;
   border-radius: 4px;
@@ -56,8 +53,9 @@ button {
 }
 
 .buttonContainer {
-  text-align: center;
-  margin-right: 40px;
+  text-align: right;
+  margin-right: 50px;
+  margin-top: 10px;
 }
 
 .container {
