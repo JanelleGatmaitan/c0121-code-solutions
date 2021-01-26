@@ -150,7 +150,12 @@ var orderHistory = [
       {
         quantity: 1,
         department: 'electronics',
-        price: 15.98
+        price: 94.95,
+      },
+      {
+        quantity: 1,
+        department: 'books',
+        price: 33.99
       }
     ]
   },
