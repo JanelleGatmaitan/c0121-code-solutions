@@ -1,0 +1,65 @@
+#formHeading {
+  font-family: 'Brandon Grotesque';
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #f64958;
+  margin-top: 15px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.formLabel {
+  font-family: 'Brandon Grotesque';
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.inputBox {
+  font-family: 'AtlasGrotesk';
+  padding: 5px;
+  color: #b8b9ba;
+  border-radius: 4px;
+  border: 0.5px solid #b8b9ba;
+  margin: 1px;
+  width: 450px;
+  height: 35px;
+  display: block;
+}
+
+select {
+  font-family: 'Brandon Grotesque';
+  padding: 2px;
+  color: #2b2926;
+  border-radius: 4px;
+  border: 0.5px solid #b8b9ba;
+  margin: 1px;
+  background-color: #f2efe9;
+  width: 450px;
+  height: 35px;
+}
+
+button {
+  font-family: 'Brandon Grotesque';
+  background-color: #f64958;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  margin-left: 360px;
+  height: 33px;
+}
+
+.buttonContainer {
+  text-align: right;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 500px;
+  height: 70px;
+  margin: auto;
+}
