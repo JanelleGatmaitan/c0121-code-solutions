@@ -2,6 +2,10 @@
 
 }
 
+p {
+  font-family: 'Avenir';
+}
+
 .navBar {
   display: flex;
   border-bottom: 1px solid #c7c6c3;
@@ -21,7 +25,6 @@
   margin: auto;
   display: flex;
   margin-right: 80px;
-  font-family: 'Avenir';
   font-size: 12px;
 }
 
@@ -35,7 +38,6 @@ a {
 }
 
 #contactButton {
-  font-family: 'Avenir';
   font-size: 12px;
   padding: 10px;
   text-align: center;
@@ -46,44 +48,86 @@ a {
   width: 90px;
 }
 
-.mainPic {
-  margin: 40px;
+.emrPic {
+  width: 1000px;
+  height: 500px;
+  background-image: url('images/hero.jpg');
+  background-size: cover;
+  background-position: center;
   position: relative;
+  margin: auto;
+  margin-top: 55px;
 }
 
-.imgContainer {
-  text-align: center;
-}
-
-#EMR {
-  width: 83%;
-  position: relative;
+.overlay {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  width: 1000px;
+  height: 500px;
 }
 
 .textContent {
+  margin: 50px;
   position: absolute;
-  top: 30px;
-  margin-left: 150px;
-  line-height: 30px;
   bottom: 100px;
+  line-height: 30px;
+  color: white;
+  width: 50%;
 }
 
 #title {
-
+  font-family: 'Tiempos Headline';
+  font-weight: 400;
+  width: 80%;
 }
 
 #paragraph {
-
+  font-family: 'Avenir';
+  font-size: 13px;
 }
 
 .startButton {
   font-family: 'Avenir';
-  font-size: 12px;
-  padding: 10px;
+  font-size: 14px;
+  padding: 12px;
   text-align: center;
   background-color: #036;
   color: white;
   border: none;
   border-radius: 3px;
-  width: 130px;
+  width: 150px;
+  position: absolute;
+  margin-top: 10px;
+}
+
+.cliniciansContainer {
+  margin: auto;
+  margin-top: 60px;
+  background-color: #f1f1f1;
+  text-align: center;
+  width: 90%;
+  height: 400px;
+  color: #4b4b4b;
+}
+
+.clinicians {
+  position: relative;
+  top: 40px;
+}
+
+#cliniciansText {
+  margin: auto;
+  width: 30%;
+  font-size: 12px;
+}
+
+.locationsContainer {
+  margin: auto;
+  display: flex;
+  margin-top: 40px;
+  width: 70%;
+  line-height: 30px;
+}
+
+.locations {
+  margin: auto;
 }
