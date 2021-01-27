@@ -65,7 +65,7 @@ a {
   height: 500px;
 }
 
-.textContent {
+.overlayTextContent {
   margin: 50px;
   position: absolute;
   bottom: 100px;
@@ -130,4 +130,42 @@ a {
 
 .locations {
   margin: auto;
+}
+
+.learnMoreRow {
+  display: flex;
+  margin-top: 30px;
+}
+
+.learnMoreText {
+  color: #4b4b4b;
+  width: 40%;
+  margin-left: 150px;
+}
+
+#learnMore {
+  font-family: 'Tiempos Headline';
+  font-weight: 400;
+}
+
+#schedule {
+  font-size: 12px;
+  text-align: left;
+}
+
+.learnMoreButtonContainer {
+  text-align: right;
+  width: 37%;
+}
+
+#learnMoreButton {
+  font-family: 'Avenir';
+  font-size: 14px;
+  padding: 12px;
+  text-align: center;
+  background-color: #036;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  width: 150px;
 }
