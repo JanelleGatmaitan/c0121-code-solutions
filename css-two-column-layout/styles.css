@@ -1,0 +1,73 @@
+.container {
+  font-family: Karla;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+}
+
+.col-full {
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+.missionStatement {
+  margin: 0 auto;
+  width: 55%;
+  line-height: 30px;
+}
+
+.img-and-text {
+  display: flex;
+}
+
+.col-fourths {
+  display: flex;
+  margin: 0 auto;
+}
+
+.col-fourths:first-child {
+  margin-bottom: 80px;
+}
+
+.text-content {
+  margin-top: 60px;
+}
+
+.subTitle {
+  text-transform: uppercase;
+  font-size: 14px;
+  width: 200px;
+}
+
+.description {
+  width: 70%;
+  line-height: 27px;
+}
+
+.midContainer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+button {
+  text-transform: uppercase;
+  text-align: center;
+  color: #bf3b21;
+  font-weight: 780;
+  background-color: white;
+  padding: 10px 30px;
+  margin: 30px;
+  width: 200px;
+  border: solid 2px #bf3b21;
+}
