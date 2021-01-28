@@ -42,13 +42,13 @@ function categorizeAcidity(pH) {
     return 'neutral';
   } else if ((pH > 7) && (pH < 14)) {
     return 'base';
-  } else if ((pH < 7) && (pH > 14)) {
+  } else if ((pH < 7) && (pH > 0)) {
     return 'acidic';
   } else {
     return 'invalid pH level';
   }
 }
-console.log(categorizeAcidity(5));
+console.log(categorizeAcidity(1));
 
 function introduceWarnerBro(name) {
   if (name === 'yakko') {
