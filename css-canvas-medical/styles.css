@@ -12,11 +12,12 @@ p {
   margin-top: 40px;
 }
 
-.logoContainer {
+.blueLogoContainer {
   margin-left: 80px;
+  text-align: left;
 }
 
-#blueLogo {
+.logo {
   width: 50%;
   margin-bottom: 20px;
 }
@@ -49,7 +50,7 @@ a {
 }
 
 .emrPic {
-  width: 1000px;
+  width: 1100px;
   height: 500px;
   background-image: url('images/hero.jpg');
   background-size: cover;
@@ -61,7 +62,7 @@ a {
 
 .overlay {
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
-  width: 1000px;
+  width: 1100px;
   height: 500px;
 }
 
@@ -168,4 +169,61 @@ a {
   border: none;
   border-radius: 3px;
   width: 150px;
+  margin-top: 15px;
+}
+
+.contactFooter {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #4b4b4b;
+  text-align: center;
+  width: 90%;
+  height: 400px;
+  color: #f1f1f1;
+}
+
+.col-thirds {
+  margin-top: 80px;
+  margin-left: 80px;
+}
+
+.whiteLogoContainer {
+  text-align: left;
+  margin-top: 25px;
+}
+
+.contactInfoContainer {
+  line-height: 10px;
+}
+
+.contactInfo {
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  line-height: 30px;
+  width: 100px;
+  margin-left: 100px;
+}
+
+.firstLi {
+  text-transform: uppercase;
+}
+
+ul a {
+  color: #f1f1f1;
+  font-family: 'Avenir';
+}
+
+.privacy {
+  display: flex;
+  margin: 20px 115px;
+}
+
+.half-col {
+  width: 12%;
 }
