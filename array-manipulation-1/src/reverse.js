@@ -1,5 +1,4 @@
 /* exported reverse */
-debugger;
 function reverse(array) {
   var newArray = [];
   for (var i = array.length - 1; i >= 0; i--) {
@@ -7,4 +6,3 @@ function reverse(array) {
   }
   return newArray;
 }
-reverse([1, 2, 3]);

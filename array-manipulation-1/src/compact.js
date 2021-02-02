@@ -1,5 +1,4 @@
 /* exported compact */
-debugger;
 function compact(array) {
   var newArray = [];
   for (var i = 0; i < array.length; i++) {
@@ -9,4 +8,3 @@ function compact(array) {
   }
   return newArray;
 }
-compact([[], [], []]);
