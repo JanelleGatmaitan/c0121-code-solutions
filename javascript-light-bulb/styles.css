@@ -1,0 +1,29 @@
+.background-on {
+  background-color: #a2dce7;
+}
+
+.background-off {
+  background-color: #4d4c60;
+}
+
+button {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+  background-color: #d691a0;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border-style: none;
+  outline: none;
+}
+
+.button-off {
+  background-color: #fadcdc;
+}
+
+.button-on {
+  background-color: #ffed86;
+}
