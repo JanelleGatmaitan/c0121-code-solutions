@@ -24,7 +24,7 @@ var libraryString = JSON.stringify(library);
 console.log('JSON.stringify: ', libraryString);
 console.log('typeof libraryString: ', typeof libraryString);
 
-var student = JSON.stringify({ name: 'Janelle', id: 1550 });
+var student = '{ "name": "Janelle", "id": 1550 }';
 
 console.log('student: ', student);
 console.log('typeof student: ', typeof student);
