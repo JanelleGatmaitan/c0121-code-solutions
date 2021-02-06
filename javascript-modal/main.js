@@ -6,16 +6,12 @@ var $noButton = document.querySelector('.noButton');
 $openModal.addEventListener('click', open);
 
 function open(event) {
-  if (true) {
-    $textBoxContainer.className = 'textBoxContainer';
-    $overlay.className = 'overlay';
-  }
+  $textBoxContainer.className = 'textBoxContainer';
+  $overlay.className = 'overlay';
 }
 
 $noButton.addEventListener('click', close);
 function close(event) {
-  if (true) {
-    $textBoxContainer.className = 'none';
-    $overlay.className = 'none';
-  }
+  $textBoxContainer.className = 'none';
+  $overlay.className = 'none';
 }
