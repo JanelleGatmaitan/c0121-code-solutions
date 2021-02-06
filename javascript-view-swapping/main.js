@@ -1,22 +1,25 @@
 var $tabContainer = document.querySelector('.tab-container');
 var $tabList = document.querySelectorAll('.tab');
 var $viewList = document.querySelectorAll('.view');
-console.log($viewList);
+
 $tabContainer.addEventListener('click', function (event) {
   if (event.target.matches('.tab')) {
-    $tabList.forEach(function (currentValue) {
-      if (currentValue === event.target) {
-        currentValue.className = 'tab active';
+    for (var i = 0; i < $tabList.length; i++) {
+      if ($tabList[i] === event.target) {
+        $tabList[i].className = 'tab active';
       } else {
-        currentValue.className = 'tab';
+        $tabList[i].className = 'tab';
       }
-    });
-  }
-  if (event.target.matches('div.tab')) {
-    var attribute = event.target.getAttribute('data-view');
-    console.log(attribute);
-    $viewList.forEach(function (currentValue) {
+    }
 
-    });
+    var dataViewValue = event.target.getAttribute('data-view');
+    for (var x = 0; x < $viewList.length; x++) {
+      if ($viewList[x].getAttribute('data-view') !== dataViewValue) {
+        $viewList[x].className = 'view hidden';
+      } else {
+        $viewList[x].className = 'view';
+      }
+    }
   }
+
 });
