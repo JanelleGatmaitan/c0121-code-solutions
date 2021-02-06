@@ -52,14 +52,3 @@ section {
 .card > img {
   width: 100%;
 }
-
-button {
-  transition-delay: 0.5s;
-  transition-property: background-color;
-  background-color: red;
-}
-
-.card:hover {
-  transition-delay: 0.05s;
-  transition-property: ;
-}
