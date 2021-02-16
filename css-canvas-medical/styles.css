@@ -1,9 +1,7 @@
-.container {
-
-}
-
-p {
+body,
+button {
   font-family: 'Avenir';
+  font-size: 16px;
 }
 
 .navBar {
@@ -41,11 +39,6 @@ a {
 #contactButton {
   font-size: 12px;
   padding: 10px;
-  text-align: center;
-  background-color: #036;
-  color: white;
-  border: none;
-  border-radius: 3px;
   width: 90px;
 }
 
@@ -82,19 +75,12 @@ a {
 }
 
 #paragraph {
-  font-family: 'Avenir';
   font-size: 13px;
 }
 
 .startButton {
-  font-family: 'Avenir';
   font-size: 14px;
   padding: 12px;
-  text-align: center;
-  background-color: #036;
-  color: white;
-  border: none;
-  border-radius: 3px;
   width: 150px;
   position: absolute;
   margin-top: 10px;
@@ -111,8 +97,7 @@ a {
 }
 
 .clinicians {
-  position: relative;
-  top: 40px;
+  padding: 40px;
 }
 
 #cliniciansText {
@@ -159,19 +144,6 @@ a {
   width: 37%;
 }
 
-#learnMoreButton {
-  font-family: 'Avenir';
-  font-size: 14px;
-  padding: 12px;
-  text-align: center;
-  background-color: #036;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  width: 150px;
-  margin-top: 15px;
-}
-
 .contactFooter {
   display: flex;
   margin: auto;
@@ -181,11 +153,15 @@ a {
   width: 90%;
   height: 400px;
   color: #f1f1f1;
+  justify-content: space-around;
 }
 
-.col-thirds {
+.colThirds {
   margin-top: 80px;
-  margin-left: 80px;
+}
+
+.colThirds:first-child {
+  margin-right: 100px;
 }
 
 .whiteLogoContainer {
@@ -210,13 +186,12 @@ ul {
   margin-left: 100px;
 }
 
-.firstLi {
+li:first-child {
   text-transform: uppercase;
 }
 
 ul a {
   color: #f1f1f1;
-  font-family: 'Avenir';
 }
 
 .privacy {
@@ -226,4 +201,26 @@ ul a {
 
 .half-col {
   width: 12%;
+}
+
+button {
+  text-align: center;
+  background-color: #036;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+#learnMoreButton {
+  padding: 12px;
+  width: 150px;
+  margin-top: 15px;
+}
+
+.colThirdsContainer {
+  display: flex;
+}
+
+.productLinks {
+  display: flex;
 }
