@@ -8,6 +8,7 @@ function changeNumber() {
     $heading.textContent = '1';
   } else {
     $heading.textContent = '~Earth Beeeelooowww Us~'
+    clearCountdown();
   }
 }
 
@@ -20,5 +21,3 @@ var startCountdown = countdown();
 function clearCountdown() {
   clearInterval(startCountdown);
 }
-
-clearCountdown();
