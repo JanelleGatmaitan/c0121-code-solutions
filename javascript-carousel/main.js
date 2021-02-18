@@ -4,8 +4,9 @@ var $images = document.querySelectorAll('img');
 var $circles = document.querySelectorAll('i.fa-circle');
 var index = 0;
 var lastIndex = $images.length - 1;
+var $circlesParent = document.querySelector('div:nth-child(2)')
 
-function slideRight () {
+function slideRight() {
   for (var i = 0; i < $images.length; i++) {
     $images[i].className = 'slide-hidden';
     $circles[i].className = 'far fa-circle'
@@ -24,8 +25,7 @@ function slideRight () {
 function slideLeft() {
   for (var i = 0; i < $images.length; i++) {
     $images[i].className = 'slide-hidden';
-    $circles[i].className = 'far fa-circle'
-    console.log('loop');
+    $circles[i].className = 'far fa-circle';
   }
   if (index > 0) {
     $images[index - 1].className = 'current-slide';
@@ -38,13 +38,26 @@ function slideLeft() {
   }
 }
 
+function progressDot(event) {
+  if (event.target && event.target.matches('i.fa-circle')) {
+    for (var i = 0; i < $images.length; i++) {
+      $images[i].className = 'slide-hidden';
+      $circles[i].className = 'far fa-circle';
+      if ($images[i].getAttribute('picture-id-number') === $circles[i].getAttribute('picture-id-number') {
+        $images[i].className = 'current-slide';
+        $circles[i].className = 'fas fa-circle'
+      }
+    }
+  }
+}
 
 $chevronRight.addEventListener('click', slideRight);
 $chevronLeft.addEventListener('click', slideLeft);
-  // } else if (currentIndex = 0) {
-  // console.log('yeet');
-  // currentIndex = $images.length - 1;
-  // $images[currentIndex].className = 'current-slide';
-  // $circles[currentIndex].className = 'fas fa-circle'
-  // currentIndex--;
+$circlesParent.addEventListener('click', progressDot);
+
+// for (var j = 0; j < $images.length; j++) {
+//   if ($images[j].getAttribute('picture-id-number') === $circles[j].getAttribute('picture-id-number')) {
+//     $images[j].className = 'current-slide';
+//     $circles[j].className = 'fas fa-circle'
+//   }
 // }
