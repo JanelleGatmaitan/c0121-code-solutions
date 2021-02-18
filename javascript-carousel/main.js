@@ -6,11 +6,15 @@ var index = 0;
 var lastIndex = $images.length - 1;
 var $circlesParent = document.querySelector('div:nth-child(2)')
 
-function slideRight() {
+function styleNotSelected() {
   for (var i = 0; i < $images.length; i++) {
     $images[i].className = 'slide-hidden';
     $circles[i].className = 'far fa-circle'
   }
+}
+
+function slideRight() {
+  styleNotSelected();
   if (index < lastIndex) {
     $images[index + 1].className = 'current-slide';
     $circles[index + 1].className = 'fas fa-circle'
@@ -23,10 +27,7 @@ function slideRight() {
 }
 
 function slideLeft() {
-  for (var i = 0; i < $images.length; i++) {
-    $images[i].className = 'slide-hidden';
-    $circles[i].className = 'far fa-circle';
-  }
+  styleNotSelected();
   if (index > 0) {
     $images[index - 1].className = 'current-slide';
     $circles[index - 1].className = 'fas fa-circle'
@@ -40,12 +41,12 @@ function slideLeft() {
 
 function progressDot(event) {
   if (event.target && event.target.matches('i.fa-circle')) {
-    for (var i = 0; i < $images.length; i++) {
-      $images[i].className = 'slide-hidden';
-      $circles[i].className = 'far fa-circle';
-      if ($images[i].getAttribute('picture-id-number') === $circles[i].getAttribute('picture-id-number') {
-        $images[i].className = 'current-slide';
-        $circles[i].className = 'fas fa-circle'
+    var clickedCircleId = event.target.getAttribute('picture-id-number');
+    for (var j = 0; j < $images.length; j++) {
+      if (clickedCircleId == $images[j].getAttribute('picture-id-number')) {
+       styleNotSelected();
+        $images[j].className = 'current-slide';
+        $circles[j].className = 'fas fa-circle';
       }
     }
   }
@@ -54,10 +55,3 @@ function progressDot(event) {
 $chevronRight.addEventListener('click', slideRight);
 $chevronLeft.addEventListener('click', slideLeft);
 $circlesParent.addEventListener('click', progressDot);
-
-// for (var j = 0; j < $images.length; j++) {
-//   if ($images[j].getAttribute('picture-id-number') === $circles[j].getAttribute('picture-id-number')) {
-//     $images[j].className = 'current-slide';
-//     $circles[j].className = 'fas fa-circle'
-//   }
-// }
