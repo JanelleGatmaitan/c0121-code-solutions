@@ -1,0 +1,226 @@
+body,
+button {
+  font-family: 'Avenir';
+  font-size: 16px;
+}
+
+.navBar {
+  display: flex;
+  border-bottom: 1px solid #c7c6c3;
+  margin-top: 40px;
+}
+
+.blueLogoContainer {
+  margin-left: 80px;
+  text-align: left;
+}
+
+.logo {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.navBarItems {
+  margin: auto;
+  display: flex;
+  margin-right: 80px;
+  font-size: 12px;
+}
+
+.navBarlink {
+  margin: auto 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #999896;
+}
+
+#contactButton {
+  font-size: 12px;
+  padding: 10px;
+  width: 90px;
+}
+
+.emrPic {
+  width: 1100px;
+  height: 500px;
+  background-image: url('images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: auto;
+  margin-top: 55px;
+}
+
+.overlay {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  width: 1100px;
+  height: 500px;
+}
+
+.overlayTextContent {
+  margin: 50px;
+  position: absolute;
+  bottom: 100px;
+  line-height: 30px;
+  color: white;
+  width: 50%;
+}
+
+#title {
+  font-family: 'Tiempos Headline';
+  font-weight: 400;
+  width: 80%;
+}
+
+#paragraph {
+  font-size: 13px;
+}
+
+.startButton {
+  font-size: 14px;
+  padding: 12px;
+  width: 150px;
+  position: absolute;
+  margin-top: 10px;
+}
+
+.cliniciansContainer {
+  margin: auto;
+  margin-top: 60px;
+  background-color: #f1f1f1;
+  text-align: center;
+  width: 90%;
+  height: 400px;
+  color: #4b4b4b;
+}
+
+.clinicians {
+  padding: 40px;
+}
+
+#cliniciansText {
+  margin: auto;
+  width: 30%;
+  font-size: 12px;
+}
+
+.locationsContainer {
+  margin: auto;
+  display: flex;
+  margin-top: 40px;
+  width: 70%;
+  line-height: 30px;
+}
+
+.locations {
+  margin: auto;
+}
+
+.learnMoreRow {
+  display: flex;
+  margin-top: 30px;
+}
+
+.learnMoreText {
+  color: #4b4b4b;
+  width: 40%;
+  margin-left: 150px;
+}
+
+#learnMore {
+  font-family: 'Tiempos Headline';
+  font-weight: 400;
+}
+
+#schedule {
+  font-size: 12px;
+  text-align: left;
+}
+
+.learnMoreButtonContainer {
+  text-align: right;
+  width: 37%;
+}
+
+.contactFooter {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #4b4b4b;
+  text-align: center;
+  width: 90%;
+  height: 400px;
+  color: #f1f1f1;
+  justify-content: space-around;
+}
+
+.colThirds {
+  margin-top: 80px;
+}
+
+.colThirds:first-child {
+  margin-right: 100px;
+}
+
+.whiteLogoContainer {
+  text-align: left;
+  margin-top: 25px;
+}
+
+.contactInfoContainer {
+  line-height: 10px;
+}
+
+.contactInfo {
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  line-height: 30px;
+  width: 100px;
+  margin-left: 100px;
+}
+
+li:first-child {
+  text-transform: uppercase;
+}
+
+ul a {
+  color: #f1f1f1;
+}
+
+.privacy {
+  display: flex;
+  margin: 20px 115px;
+}
+
+.half-col {
+  width: 12%;
+}
+
+button {
+  text-align: center;
+  background-color: #036;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+#learnMoreButton {
+  padding: 12px;
+  width: 150px;
+  margin-top: 15px;
+}
+
+.colThirdsContainer {
+  display: flex;
+}
+
+.productLinks {
+  display: flex;
+}
