@@ -12,12 +12,12 @@ function changeNumber() {
   }
 }
 
-function countdown() {
+function startCountdown() {
   setInterval(changeNumber, 1000);
 }
 
-var startCountdown = countdown();
+var countdownID = countdown();
 
 function clearCountdown() {
-  clearInterval(startCountdown);
+  clearInterval(countdownID);
 }
