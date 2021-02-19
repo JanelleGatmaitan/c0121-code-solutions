@@ -5,6 +5,17 @@ var $circles = document.querySelectorAll('i.fa-circle');
 var index = 0;
 var lastIndex = $images.length - 1;
 var $circlesParent = document.querySelector('div:nth-child(2)')
+var intervalID;
+
+function stopCarousel() {
+  clearInterval(intervalID);
+}
+
+function startCarousel() {
+  intervalID = setInterval(slideRight, 3000);
+}
+
+startCarousel();
 
 function styleNotSelected() {
   for (var i = 0; i < $images.length; i++) {
@@ -24,6 +35,8 @@ function slideRight() {
     $circles[0].className = 'fas fa-circle'
     index = 0;
   }
+  stopCarousel();
+  startCarousel();
 }
 
 function slideLeft() {
@@ -37,6 +50,8 @@ function slideLeft() {
     $circles[lastIndex].className = 'fas fa-circle'
     index = lastIndex;
   }
+  stopCarousel();
+  startCarousel();
 }
 
 function progressDot(event) {
@@ -47,6 +62,8 @@ function progressDot(event) {
        styleNotSelected();
         $images[j].className = 'current-slide';
         $circles[j].className = 'fas fa-circle';
+        stopCarousel();
+        startCarousel();
       }
     }
   }
