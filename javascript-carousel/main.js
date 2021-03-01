@@ -6,8 +6,7 @@ var index = 0;
 var lastIndex = $images.length - 1;
 var $circlesParent = document.querySelector('div:nth-child(2)')
 
-intervalId = setInterval(slideRight, 3000);
-
+  intervalId = setInterval(slideRight, 3000);
 
 function styleNotSelected() {
   for (var i = 0; i < $images.length; i++) {
@@ -18,6 +17,8 @@ function styleNotSelected() {
 
 function slideRight() {
   styleNotSelected();
+  clearInterval(intervalId);
+  intervalId = setInterval(slideRight, 3000);
   if (index < lastIndex) {
     $images[index + 1].className = 'current-slide';
     $circles[index + 1].className = 'fas fa-circle'
@@ -31,6 +32,8 @@ function slideRight() {
 
 function slideLeft() {
   styleNotSelected();
+  clearInterval(intervalId);
+  intervalId = setInterval(slideRight, 3000);
   if (index > 0) {
     $images[index - 1].className = 'current-slide';
     $circles[index - 1].className = 'fas fa-circle'
@@ -48,6 +51,8 @@ function progressDot(event) {
     for (var j = 0; j < $images.length; j++) {
       if (clickedCircleId == $images[j].getAttribute('picture-id-number')) {
         index = parseInt(clickedCircleId);
+        clearInterval(intervalId);
+        intervalId = setInterval(slideRight, 3000);
        styleNotSelected();
         $images[j].className = 'current-slide';
         $circles[j].className = 'fas fa-circle';
