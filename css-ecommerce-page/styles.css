@@ -1,0 +1,45 @@
+body {
+  font-family: DM Sans;
+}
+
+header {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  margin: 60px;
+  justify-content: center;
+}
+
+.column {
+  flex-basis: 100%;
+}
+
+.product-image {
+  display: flex;
+  width:  250px;
+  height: 400px;
+  background-size: cover;
+}
+
+.item,
+.price {
+  font-weight: bold;
+}
+
+.price {
+  background-color: antiquewhite;
+  width: fit-content;
+}
+
+.size,
+.retail {
+  color: grey;
+  font-weight: normal;
+}
+
+.retail {
+  background-color: white;
+  padding: 10px;
+}
