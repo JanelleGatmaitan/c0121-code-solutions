@@ -7,24 +7,23 @@ header {
 
 .row {
   display: flex;
-  justify-content: space-around;
-  margin: 0 60px;
+  justify-content: space-evenly;
+}
+
+.caption {
+  text-align: center;
 }
 
 .phone {
-  margin: 0 5px;
+  margin: 0 auto;
   margin-top: 20px;
-  width: 430px;
+  width: 415px;
   height: 673px;
 }
 
 .icon {
   width: 90px;
   height: 90px;
-}
-
-.feature {
-  text-align: center;
 }
 
 .description {
