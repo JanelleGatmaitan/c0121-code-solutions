@@ -7,11 +7,15 @@ let num1 = Number(process.argv[2]);
 let num2 = Number(process.argv[4]);
 
 if (process.argv[3] === 'plus') {
-  add(num1, num2);
+  let result = add(num1, num2);
+  console.log('result: ', result)
 } else if (process.argv[3] === 'minus') {
-  subtract(num1, num2);
+  let result = subtract(num1, num2);
+  console.log('result: ', result)
 } else if (process.argv[3] === 'over') {
-  divide(num1, num2);
+  let result = divide(num1, num2);
+  console.log('result: ', result)
 } else if (process.argv[3] === 'times') {
-  multiply(num1, num2);
+  let result = multiply(num1, num2);
+  console.log('result: ', result)
 }
