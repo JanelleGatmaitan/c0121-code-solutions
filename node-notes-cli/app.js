@@ -1,5 +1,5 @@
 const option = process.argv[2];
-const parsedData = require('./data') // contents have been parsed into JS obj
+const parsedData = require('./data');
 const notes = parsedData.notes;
 const fs = require('fs');
 
@@ -12,7 +12,6 @@ if (option === 'read') {
     }
   });
 } else if (option === 'create') {
-  console.log('note is being made');
   const newNote = process.argv[3];
   let nextId = parsedData.nextId;
   notes[`${nextId}`] = newNote;
@@ -29,13 +28,14 @@ if (option === 'read') {
   fs.writeFile('data.json', `${updatedNotesJSON}`, 'utf8', err => {
     if (err) throw err;
   });
+} else if (option === 'update') {
+  const toUpdate = process.argv[3];
+  const editedNote = process.argv[4];
+  notes[`${toUpdate}`] = editedNote;
+  const updatedNotesJSON = JSON.stringify(parsedData, null, 2)
+  fs.writeFile('data.json', `${updatedNotesJSON}`, 'utf8', err => {
+    if (err) throw err;
+  });
+} else {
+  console.log('invalid option');
 }
-
-
-
-
-// } else if (option === 'update') {
-
-// } else {
-//   console.log('invalid option');
-// }
