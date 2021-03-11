@@ -22,4 +22,20 @@ if (option === 'read') {
   fs.writeFile('data.json', `${updatedNotesJSON}`, 'utf8', err => {
     if (err) throw err;
   });
+} else if (option === 'delete') {
+  const toDelete = process.argv[3];
+  delete notes[`${toDelete}`];
+  const updatedNotesJSON = JSON.stringify(parsedData, null, 2)
+  fs.writeFile('data.json', `${updatedNotesJSON}`, 'utf8', err => {
+    if (err) throw err;
+  });
 }
+
+
+
+
+// } else if (option === 'update') {
+
+// } else {
+//   console.log('invalid option');
+// }
