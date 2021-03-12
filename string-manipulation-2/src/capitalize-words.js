@@ -12,22 +12,6 @@ function capitalizeWords(string) {
   return capitalizedString;
 }
 
-// function capitalizeWord(word) {
-//   var capitalizedWord = '';
-//   var checkJS = isJS(word);
-//   if (checkJS) {
-//     capitalizedWord = 'JavaScript';
-//   } else {
-//     for (var i = 0; i < word.length; i++) {
-//       if (i === 0) {
-//         capitalizedWord += word[i].toUpperCase();
-//       } else {
-//         capitalizedWord += word[i].toLowerCase();
-//       }
-//     }
-//   }
-//   return capitalizedWord;
-// }
 function capitalizeOneWord(word) {
   var capitalizedWord = '';
   for (var i = 0; i < word.length; i++) {

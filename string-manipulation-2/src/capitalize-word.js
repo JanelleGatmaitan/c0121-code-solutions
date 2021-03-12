@@ -16,12 +16,5 @@ function capitalizeWord(word) {
 };
 
 function isJS(wordToCheck) {
-  var keyword = 'javascript';
-  var isJS = null;
-  if (keyword.localeCompare(wordToCheck, 'en', { sensitivity: 'base' }) === 0) {
-    isJS = true;
-  } else {
-    isJS = false;
-  }
-  return isJS;
+  return wordToCheck.toLowerCase() === 'javascript';
 }
