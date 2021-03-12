@@ -1,0 +1,25 @@
+/* exported capitalizeWords */
+function capitalizeWords(string) {
+  var words = string.split(' ');
+  var capitalizedString = '';
+  for (var i = 0; i < words.length; i++) {
+    if (i === words.length - 1) {
+      capitalizedString += capitalizeOneWord(words[i]);
+    } else {
+      capitalizedString += capitalizeOneWord(words[i]) + ' ';
+    }
+  }
+  return capitalizedString;
+}
+
+function capitalizeOneWord(word) {
+  var capitalizedWord = '';
+  for (var i = 0; i < word.length; i++) {
+    if (i === 0) {
+      capitalizedWord += word[i].toUpperCase();
+    } else {
+      capitalizedWord += word[i].toLowerCase();
+    }
+  }
+  return capitalizedWord;
+}
