@@ -9,5 +9,3 @@
  template1 | postgres | UTF8     | C.UTF-8 | C.UTF-8 | =c/postgres          +
            |          |          |         |         | postgres=CTc/postgres
 (5 rows)
-
-/
