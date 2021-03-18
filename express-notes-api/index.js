@@ -7,12 +7,12 @@ const fs = require('fs');
 app.use(express.json());
 
 app.get('/api/notes', function (req, res) {
-  let array = [];
+  let Notesarray = [];
   for (const id in notes) {
     let note = (notes[id]);
-    array.push(note);
+    Notesarray.push(note);
   }
-  res.json(array);
+  res.json(Notesarray);
 });
 
 app.get('/api/notes/:id', function (req, res) {
