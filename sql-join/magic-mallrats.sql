@@ -2,5 +2,6 @@ select "firstName",
         "lastName"
 from "customers"
 join "rentals" using ("customerId")
-join "payments" using ("rentalId")
-join ""
+join "inventory" using ("inventoryId")
+join "films" using ("filmId")
+where "title" = 'Magic Mallrats';
