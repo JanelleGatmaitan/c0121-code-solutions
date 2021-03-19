@@ -34,10 +34,14 @@ app.post('/api/notes', (req, res) => {
     const newNoteId = parsedNotes.nextId++;
     newNote.id = newNoteId;
     notes[newNoteId] = newNote;
-    res.status(201).json(newNote);
     const updatedNotesJSON = JSON.stringify(parsedNotes, null, 2);
     fs.writeFile('data.json', `${updatedNotesJSON}`, 'utf8', err => {
-      if (err) res.status(500).json({ "error": "An unexpected error occurred." });
+      if (err) {
+        console.error(err);
+        res.status(500).json({ "error": "An unexpected error occurred." });
+      } else {
+        res.status(201).json(newNote);
+      }
     });
   }
 });
@@ -52,9 +56,13 @@ app.delete('/api/notes/:id', function (req, res) {
     delete notes[noteId];
     const updatedNotesJSON = JSON.stringify(parsedNotes, null, 2);
     fs.writeFile('data.json', `${updatedNotesJSON}`, 'utf8', err => {
-      if (err) res.status(500).json({ "error": "An unexpected error occurred." });
+      if (err) {
+        console.error(err);
+        res.status(500).json({ "error": "An unexpected error occurred." });
+      } else {
+        res.status(204).json();
+      }
     });
-    res.status(204).json();
   }
 });
 
@@ -72,9 +80,12 @@ app.put('/api/notes/:id', function (req, res) {
       notes[noteId].content = editedNote;
       const updatedNotesJSON = JSON.stringify(parsedNotes, null, 2);
       fs.writeFile('data.json', `${updatedNotesJSON}`, 'utf8', err => {
-        if (err) res.status(500).json({ "error": "An unexpected error occurred." });
+        if (err) {
+          res.status(500).json({ "error": "An unexpected error occurred." });
+        } else {
+          res.status(200).json(notes[noteId]);
+        }
       });
-      res.status(200).json(notes[noteId]);
     }
   }
 });
