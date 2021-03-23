@@ -43,10 +43,10 @@ app.post('/api/grades/', (req, res) => {
       returning *;
   `;
   const params = [req.body.name, req.body.course, req.body.score];
-  const newGrade = req.body;
 
   db.query(sql, params)
     .then(result => {
+      const newGrade = result.rows[0];
       res.status(201).json(newGrade);
     })
     .catch(err => {
