@@ -31,6 +31,6 @@ export default class HotButton extends React.Component {
     } else if (timesClicked >= 18) {
       className = 'white';
     }
-    return <button class={className} onClick={this.handleClick}>Hot Button</button>;
+    return <button className={className} onClick={this.handleClick}>Hot Button</button>;
   }
 }
