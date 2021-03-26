@@ -18,7 +18,7 @@ class NewsLetterForm extends React.Component {
   }
 
   handleSubmit(event) {
-    console.log(this.state);
+    console.log('state:', this.state);
     event.preventDefault();
   }
 
