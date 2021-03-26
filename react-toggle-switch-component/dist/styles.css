@@ -1,0 +1,30 @@
+.background,
+.backgroundOn {
+  background-color: #cccccc;
+  width: 40px;
+  height: 21px;
+  position: relative;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.backgroundOn {
+  background-color: green;
+}
+
+.switch {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50px;
+  border: 1px solid black;
+}
+
+.dialog {
+  margin-left: 60px;
+}
+
+.on {
+  transform: translateX(20px);
+}
