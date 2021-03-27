@@ -1,0 +1,19 @@
+.watch {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seconds,
+i {
+  font-size: 2rem;
+}
+
+i {
+  margin-top: 20px;
+  margin-left: 65px;
+}
