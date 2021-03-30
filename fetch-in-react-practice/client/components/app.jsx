@@ -69,12 +69,10 @@ export default class App extends React.Component {
         break;
       }
     }
-    console.log('toEditIndex', toEditIndex)
     const status = todos[toEditIndex].isCompleted;
     const updatedStatus = {
       isCompleted: !status
     };
-    console.log('updatedStatus', updatedStatus)
     fetch(`api/todos/${todoId}`, {
       method: 'PATCH',
       body: JSON.stringify(updatedStatus),
@@ -84,7 +82,6 @@ export default class App extends React.Component {
     })
       .then(response => response.json())
       .then(updatedTodo => {
-        console.log('updatedTodo: ', updatedTodo)
         const newTodos = this.state.todos.slice();
         newTodos[toEditIndex] = updatedTodo;
         this.setState({
