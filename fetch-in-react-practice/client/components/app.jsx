@@ -43,9 +43,10 @@ export default class App extends React.Component {
     })
       .then(response => response.json())
       .then(newTodo => {
-        this.state.todos.push(newTodo);
+        const todos = this.state.todos.slice();
+        todos.push(newTodo);
         this.setState({
-          todos: this.state.todos
+          todos: todos
         });
       })
       .catch(err => console.error(err))
@@ -60,28 +61,34 @@ export default class App extends React.Component {
   }
 
   toggleCompleted(todoId) {
-    let toEditIndex = null;
+    let toEditIndex;
     const todos = this.state.todos;
     for (var i = 0; i < todos.length; i++) {
       if (todos[i].todoId === todoId) {
-        toEditIndex = todos.indexOf(todos[i]);
+        toEditIndex = i;
+        break;
       }
     }
+    console.log('toEditIndex', toEditIndex)
     const status = todos[toEditIndex].isCompleted;
-    todos[toEditIndex].isCompleted = !status;
-    const toggledTodo = todos[toEditIndex];
+    const updatedStatus = {
+      isCompleted: !status
+    };
+    console.log('updatedStatus', updatedStatus)
     fetch(`api/todos/${todoId}`, {
       method: 'PATCH',
-      body: JSON.stringify(toggledTodo),
+      body: JSON.stringify(updatedStatus),
       headers: {
         'Content-Type': 'application/json'
       }
     })
       .then(response => response.json())
-      .then(() => {
-        this.state.todos[toEditIndex] = toggledTodo;
+      .then(updatedTodo => {
+        console.log('updatedTodo: ', updatedTodo)
+        const newTodos = this.state.todos.slice();
+        newTodos[toEditIndex] = updatedTodo;
         this.setState({
-          todos
+          todos: newTodos
         });
       })
     /**
