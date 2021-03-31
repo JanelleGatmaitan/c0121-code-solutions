@@ -46,6 +46,7 @@ app.post('/api/auth/sign-up', (req, res, next) => {
       })
     })
     .catch(err => console.error(err))
+    .verify(password);
   /* your code starts here */
 
   /**
