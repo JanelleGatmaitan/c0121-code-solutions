@@ -1,0 +1,43 @@
+Feature 1: User can sign up
+- Client sends a post request to the server.
+- The server checks the client's request body for a username and password.
+- If there is no username or no password, an instance of the ClientError is created
+and thrown.
+    - The throw statement prevents any other code after it from executing. Control is
+then passed to the errorMiddleware.
+- If there is a username and passowrd in the client's post request, the hash method
+of the argon2 object is called to hash the password sent by the client.
+- The hash method returns a promise.
+    - Then the hashedpassword and username is added to the database with an insert statement.
+    - After a successful query to the database the client receives a 201 status code
+    and response with their userId, username, and date of when their account was created.
+    - If there is an error with the query the error is caught and passed to the errorMiddleware.
+
+Feature 2: User can sign in
+- Client sends a post request to the server.
+- The server checks the client's request body for a username and password.
+- If there is no username or no password, an instance of the ClientError is created
+and thrown.
+    - The throw statement prevents any other code after it from executing. Control is
+then passed to the errorMiddleware.
+- The database is queried with a select statement using the username and passowrd sent by the client.
+    - If the user doesn't exist in the database, a ClientError is thrown and
+     any other code after it doesn't execute.
+    - If the user does exist, the server verfies that the password sent by the client
+    matches the hashedPassword in the database.
+        - If the password doesn't match, a ClientError is thrown.
+        - If the password does match, a payload object is made with the user's userId and username.
+            - The payload and TOKEN_SECRET are passed as arguments to jwt.sign() in order to create a token.
+            - The client receives a 200 status code and response with the payload and token.
+    - If there is an error with the query to the database, the error is caught and
+    passed to the errorMiddleware.
+
+Feature 3: User can stay signed in (even if they refresh the page).
+- After successfully signing in and being authenticated, the client now has a token.
+- The component's state is updated so that isAuthorizing is false.
+- The token is stored in localStorage so that it can be used in subsequent requests.
+
+Feature 4: User can sign out.
+- The component's state is updated so that there is no user information.
+- The localStorage is reset.
+  - The token that the client received after signing in cannot be used in further requests.
